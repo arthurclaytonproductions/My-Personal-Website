@@ -15,13 +15,11 @@ document.getElementById('close-menu').addEventListener('click', function(){
 });
 
 function removeShowMenu(){
- overlay.classList.remove('show-menu');
-
+ overlay.classList.remove('show-menu')
 };
 
 function removeRemoveMenu(){
-    overlay.classList.remove('remove-menu');
-    
+    overlay.classList.remove('remove-menu')
    };
 
 
