@@ -47,7 +47,11 @@ section .slide-content {
 }
 
 section .slide {
-  height: 500px;
+  border: 10px outset #ddd;
+  border-radius: 25px;
+  border: 10px outset #ddd;
+  border-radius: 25px;
+  height: 400px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -73,7 +77,7 @@ section .image-text {
 section .arrow {
   cursor: pointer;
   position: absolute;
-  margin-top: 225px;
+  margin-top: 180px;
   width: 0;
   height: 0;
   border-style: solid;
