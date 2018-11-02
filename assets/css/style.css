@@ -24,7 +24,11 @@ header .menu-btn {
   cursor: pointer;
 }
 
-#slider, .wrap, .slide-content {
+section {
+  padding: 20px;
+}
+
+section #slider, section .wrap, section .slide-content {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -32,26 +36,26 @@ header .menu-btn {
   overflow-x: hidden;
 }
 
-.slide {
+section .slide {
   height: 400px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.slide1 {
+section .slide1 {
   background-image: url("../images/coding.jpeg");
 }
 
-.slide2 {
+section .slide2 {
   background-image: url("../images/studio.jpeg");
 }
 
-.slide3 {
+section .slide3 {
   background-image: url("../images/video.jpeg");
 }
 
-.slide-content {
+section .slide-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,27 +72,28 @@ header .menu-btn {
   text-align: center;
 }
 
-.image-text {
-  font-size: 5rem;
+section .image-text {
+  font-size: 7rem;
   color: white;
 }
 
-.arrow {
+section .arrow {
   cursor: pointer;
   position: absolute;
   width: 0;
   height: 0;
+  margin-top: 170px;
   border-style: solid;
 }
 
-#arrow-left {
+section #arrow-left {
   border-width: 30px 40px 30px 0;
   border-color: transparent white transparent transparent;
   left: 0;
   margin-left: 30px;
 }
 
-#arrow-right {
+section #arrow-right {
   border-width: 30px 0px 30px 40px;
   border-color: transparent transparent transparent white;
   right: 0;

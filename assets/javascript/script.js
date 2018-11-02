@@ -1,26 +1,45 @@
 var overlay = document.getElementById('overlay');
+var photo = document.getElementById('arrow-left');
+var photo2 = document.getElementById('arrow-right');
 var closeMenu = document.getElementById('close-menu');
 var sliderImages = document.querySelectorAll('.slide');
 var arrowLeft = document.querySelector('#arrow-left');
 var arrowRight = document.querySelector('#arrow-right');
 current = 0;
+
+
+
 //nav button icon
 document.getElementById('open-menu').addEventListener('click', function(){
     overlay.classList.add('show-menu')
-    removeRemoveMenu()
+    
+    removeRemoveMenu();
 });
 document.getElementById('close-menu').addEventListener('click', function(){
     overlay.classList.add('remove-menu')
+    
+    
     removeShowMenu();
+    setTimeout(myTimeout,1500);
+    
 });
 
 function removeShowMenu(){
- overlay.classList.remove('show-menu')
+ overlay.classList.remove('show-menu');
+ 
+
 };
 
 function removeRemoveMenu(){
-    overlay.classList.remove('remove-menu')
+    overlay.classList.remove('remove-menu');
+    photo.classList.remove('arrow');
+    photo2.classList.remove('arrow');
    };
+
+function myTimeout(){
+    photo.classList.add('arrow');
+    photo2.classList.add('arrow');;
+}
 
 
 //slide images
