@@ -2,6 +2,7 @@ var overlay = document.getElementById('overlay');
 var photo = document.getElementById('arrow-left');
 var photo2 = document.getElementById('arrow-right');
 var closeMenu = document.getElementById('close-menu');
+var menuGlitch = document.getElementById('menu-glitch');
 var sliderImages = document.querySelectorAll('.slide');
 var arrowLeft = document.querySelector('#arrow-left');
 var arrowRight = document.querySelector('#arrow-right');
@@ -26,7 +27,7 @@ document.getElementById('close-menu').addEventListener('click', function(){
 
 function removeShowMenu(){
  overlay.classList.remove('show-menu');
- 
+ menuGlitch.classList.add('glitch');
 
 };
 
@@ -34,11 +35,13 @@ function removeRemoveMenu(){
     overlay.classList.remove('remove-menu');
     photo.classList.remove('arrow');
     photo2.classList.remove('arrow');
+    menuGlitch.classList.remove('glitch');
    };
 
 function myTimeout(){
     photo.classList.add('arrow');
-    photo2.classList.add('arrow');;
+    photo2.classList.add('arrow');
+    
 }
 
 
