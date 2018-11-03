@@ -7,6 +7,23 @@ body{
         text-decoration: none;
         
     }
+    a::before{
+        content:'';
+        display: block;
+        height: 5px;
+        background:black;
+        position: absolute;
+        bottom: -.25em;
+        left: 0;
+        right: 0;
+        transform: scale(0,1);
+        transform-origin: left;
+        transition: transform ease-in-out 250ms;
+ 
+    }
+    a:hover::before{
+        transform: scale(1,1);
+    }
 }
 header{
    padding: 2em;
@@ -23,14 +40,16 @@ header{
         cursor: pointer;
     }
  
-
+    #menu-glitch{
+    float: right;
+    }
        
     .glitch {
         color: black;
         font-weight: bold;
         font-size: 22px;
         position: relative;  
-        float: right;
+       
       }
    
       @keyframes noise-anim {
@@ -293,7 +312,7 @@ nav{
             height: 5px;
             background: white;
             position: absolute;
-            bottom: -.75em;
+            bottom: -.50em;
             left: 0;
             right: 0;
             transform: scale(0,1);

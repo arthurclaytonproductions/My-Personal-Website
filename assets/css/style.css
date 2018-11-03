@@ -8,6 +8,30 @@ body a {
   text-decoration: none;
 }
 
+body a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background: black;
+  position: absolute;
+  bottom: -.25em;
+  left: 0;
+  right: 0;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform ease-in-out 250ms;
+  transition: -webkit-transform ease-in-out 250ms;
+  transition: transform ease-in-out 250ms;
+  transition: transform ease-in-out 250ms, -webkit-transform ease-in-out 250ms;
+}
+
+body a:hover::before {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
 header {
   padding: 2em;
 }
@@ -25,12 +49,15 @@ header {
   cursor: pointer;
 }
 
+#menu-glitch {
+  float: right;
+}
+
 .glitch {
   color: black;
   font-weight: bold;
   font-size: 22px;
   position: relative;
-  float: right;
 }
 
 @-webkit-keyframes noise-anim {
@@ -443,7 +470,7 @@ nav ul a::before {
   height: 5px;
   background: white;
   position: absolute;
-  bottom: -.75em;
+  bottom: -.50em;
   left: 0;
   right: 0;
   -webkit-transform: scale(0, 1);

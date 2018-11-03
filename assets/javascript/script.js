@@ -15,19 +15,20 @@ document.getElementById('open-menu').addEventListener('click', function(){
     overlay.classList.add('show-menu')
     
     removeRemoveMenu();
+    setTimeout(glitchTimeOut, 500);
 });
 document.getElementById('close-menu').addEventListener('click', function(){
     overlay.classList.add('remove-menu')
     
     
     removeShowMenu();
-    setTimeout(myTimeout,1500);
+    setTimeout(myTimeout, 1500);
     
 });
 
 function removeShowMenu(){
  overlay.classList.remove('show-menu');
- menuGlitch.classList.add('glitch');
+ 
 
 };
 
@@ -35,15 +36,18 @@ function removeRemoveMenu(){
     overlay.classList.remove('remove-menu');
     photo.classList.remove('arrow');
     photo2.classList.remove('arrow');
-    menuGlitch.classList.remove('glitch');
+    
    };
 
 function myTimeout(){
     photo.classList.add('arrow');
     photo2.classList.add('arrow');
+    menuGlitch.classList.add('glitch');
     
 }
-
+function glitchTimeOut(){
+    menuGlitch.classList.remove('glitch');
+}
 
 //slide images
 function reset(){
