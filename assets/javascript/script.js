@@ -1,8 +1,8 @@
 var overlay = document.getElementById('overlay');
 var closeMenu = document.getElementById('close-menu');
 var menuGlitch = document.getElementById('menu-glitch');
-var parallaxMenu = document.getElementById('image-text');
-var parallaxMenu2 = document.getElementById('go-away');
+
+
 //nav button icon
 document.getElementById('open-menu').addEventListener('click', function(){
     overlay.classList.add('show-menu')
@@ -22,26 +22,37 @@ function removeShowMenu(){
 
 function removeRemoveMenu(){
     overlay.classList.remove('remove-menu');
-    parallaxMenu.classList.remove('contain-position');
-    parallaxMenu2.classList.remove('ptext');
+    
 };
 
 function myTimeout(){
     menuGlitch.classList.add('glitch');
-    parallaxMenu.classList.add('contain');
-    parallaxMenu2.classList.add('ptext');
+    
 }
 
 function glitchTimeOut(){
     menuGlitch.classList.remove('glitch');
+    
 }
-
-$(window).scroll(function() {
+ 
+$(window).scroll(function(e) {
     parallax();
-})
+  })
   
-function parallax() {
-  var wScroll = $(window).scrollTop()
-  $('.pimg-p1').css('background-position', 'center ' + (wScroll*0.75)+'px');
-}
+  function parallax() {
+    var scroll = $(window).scrollTop();
+    var screenHeight = $(window).height();
+  
+    $('.pimg-p1').each(function() {
+      var offset = $(this).offset().top;
+      var distanceFromBottom = offset - scroll - screenHeight
+      
+      if (offset > screenHeight && offset) {
+        $(this).css('background-position', 'center ' + (( distanceFromBottom  ) * 0.2) +'px');
+      } else {
+        $(this).css('background-position', 'center ' + (( -scroll ) * 0.2) + 'px');
+      }
+    })
+  }
+
   

@@ -11,11 +11,8 @@ body,html{
 }
 
 header{
-    padding-top: 20px;
-    padding-bottom: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
- }
+  padding: 2em;
+}
  
  a{
     text-decoration: none;
@@ -44,7 +41,7 @@ a:hover::before{
         font-family: 'Permanent Marker', cursive;
         font-weight: bold;
         font-size: 22px;
-        position: absolute;
+        
     }
     .menu-btn{
         width: 26px;
@@ -229,7 +226,7 @@ nav{
     background: black;
     padding: 2em;
     width: calc(100% - 4em);
-    height: calc(100vh - 4em);
+    height: calc(20% - 4em);
     display: none;
     transform: scaleX(0);
     transform-origin: right;
@@ -243,7 +240,7 @@ nav{
 
     ul{
         list-style-type: none;
-        margin: 10% auto 0 auto;
+        margin: auto;
         padding: 0;
         display: grid;
         grid-template-columns: repeat(4, 25%);
@@ -279,7 +276,7 @@ nav{
             color:  gray;
             display: block;
             font-size: 1em;
-            margin-top: 20px;
+            margin-top: 10px;
         }
 
         li{
@@ -397,7 +394,7 @@ nav{
   
 .pimg1{
   background-image: url('../images/world.jpeg');
-  height: 100vh; 
+  height: 800px; 
 }
 .pimg2{
     background-image: url('../images/coding.jpg');
@@ -425,6 +422,11 @@ nav{
     color:#666;
 }
 
+#go-away{
+top: 35%;
+
+
+}
 .ptext{
    position: absolute;
    top:50%;

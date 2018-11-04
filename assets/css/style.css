@@ -10,10 +10,7 @@ body, html {
 }
 
 header {
-  padding-top: 20px;
-  padding-bottom: 50px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 2em;
 }
 
 a {
@@ -49,7 +46,6 @@ a:hover::before {
   font-family: 'Permanent Marker', cursive;
   font-weight: bold;
   font-size: 22px;
-  position: absolute;
 }
 
 .menu-btn {
@@ -365,7 +361,7 @@ nav {
   background: black;
   padding: 2em;
   width: calc(100% - 4em);
-  height: calc(100vh - 4em);
+  height: calc(20% - 4em);
   display: none;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
@@ -382,7 +378,7 @@ nav .close-btn {
 
 nav ul {
   list-style-type: none;
-  margin: 10% auto 0 auto;
+  margin: auto;
   padding: 0;
   display: -ms-grid;
   display: grid;
@@ -428,7 +424,7 @@ nav ul span {
   color: gray;
   display: block;
   font-size: 1em;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 nav ul li {
@@ -642,7 +638,7 @@ nav ul li {
 
 .pimg1 {
   background-image: url("../images/world.jpeg");
-  height: 100vh;
+  height: 800px;
 }
 
 .pimg2 {
@@ -670,6 +666,10 @@ nav ul li {
   padding: 20px;
   background-color: #f4f4f4;
   color: #666;
+}
+
+#go-away {
+  top: 35%;
 }
 
 .ptext {
