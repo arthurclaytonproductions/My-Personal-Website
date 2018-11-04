@@ -1,13 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Noto+Sans|Permanent+Marker|Righteous');
 
-body{
-    font-family: 'Permanent Marker', cursive;
+body,html{
+    height:100;
     margin: 0;
-    a{
-        text-decoration: none;
-        
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height:1.8em;
+    color: #666;
+}
+
+header{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+ }
+ 
+ a{
+    text-decoration: none;
     }
-    a::before{
+
+ a::before{
         content:'';
         display: block;
         height: 5px;
@@ -19,17 +33,15 @@ body{
         transform: scale(0,1);
         transform-origin: left;
         transition: transform ease-in-out 250ms;
- 
-    }
-    a:hover::before{
-        transform: scale(1,1);
-    }
+ }
+
+a:hover::before{
+ transform: scale(1,1);
 }
-header{
-   padding: 2em;
-}
-    .logo{
+
+.logo{
         color: black;
+        font-family: 'Permanent Marker', cursive;
         font-weight: bold;
         font-size: 22px;
         position: absolute;
@@ -45,6 +57,7 @@ header{
     }
        
     .glitch {
+        font-family: 'Permanent Marker', cursive;
         color: black;
         font-weight: bold;
         font-size: 22px;
@@ -209,71 +222,8 @@ header{
         animation: noise-anim-2 3s infinite linear alternate-reverse;
         
       }
-    
 
-section{
-    padding: 20px;
-#slider, .wrap, .slide-content{
-        margin:0;
-        padding:0;
-        width: 100%;
-        height: 100%;
-        overflow-x: hidden;
-        
-     }
-     
-     
-     
-     .slide{
-         height: 400px;
-         background-size: cover;
-         background-position: center;
-         background-repeat: no-repeat;
-     }
-     
-     .slide1{
-         background-image: url('../images/coding.jpeg');
-     }
-     .slide2{
-         background-image: url('../images/studio.jpeg');
-     }
-     .slide3{
-         background-image: url('../images/video.jpeg');
-     }
-     .slide-content{
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         text-align: center;
-         
-     }
-     .image-text{
-         font-size: 7rem;
-         color: white;
-         
-     }
-     .arrow{
-         cursor: pointer;
-         position: absolute;
-         width: 0;
-         height: 0;
-         margin-top: 170px;
-         border-style: solid;
-     }
-     #arrow-left{
-         border-width: 30px 40px 30px 0;
-         border-color: transparent white transparent transparent;
-         left: 0;
-         margin-left: 30px;
-     }
-     #arrow-right{
-         border-width: 30px 0px 30px 40px;
-         border-color: transparent transparent transparent white;
-         right: 0;
-         margin-right: 30px;
-     }
-    }
+    
 nav{
     position: absolute;
     background: black;
@@ -301,6 +251,7 @@ nav{
 
         a{
             color: white;
+            font-family: 'Permanent Marker', cursive;
             font-weight: bold;
             font-size: 1.4em;
             position: relative;
@@ -324,6 +275,7 @@ nav{
             transform: scale(1,1);
         }
         span{
+            font-family: 'Permanent Marker', cursive;
             color:  gray;
             display: block;
             font-size: 1em;
@@ -429,4 +381,69 @@ nav{
         transform: translateX(60%);
         opacity: 0;
     }
+}
+
+.contain-position{
+    position: relative;
+}
+.pimg1, .pimg2, .pimg3, .pimg4{
+  
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+  
+}
+  
+.pimg1{
+  background-image: url('../images/world.jpeg');
+  height: 100vh; 
+}
+.pimg2{
+    background-image: url('../images/coding.jpg');
+    height: 600px;
+    
+  }
+  .pimg3{
+    background-image: url('../images/video.jpeg');
+    height: 600px;
+  }
+  .pimg4{
+    background-image: url('../images/audio.jpg');
+    height: 600px;
+    
+  }
+.section{
+    text-align: center;
+    padding: 50px, 80px;
+    margin: 0;
+
+}
+.section-light{
+    padding: 20px;
+    background-color: #f4f4f4;
+    color:#666;
+}
+
+.ptext{
+   position: absolute;
+   top:50%;
+   width:100%;
+   text-align: center;
+   color: white;
+   font-size: 48px;
+   letter-spacing: 8px;
+   text-transform: uppercase;
+}
+ 
+.ptext .border{
+    background-color: #111;
+    color:#fff;
+    padding: 20px;
+    opacity: 0.70;
+
+}
+  
+.ptext .border.trans{
+background-color: transparent;
 }
