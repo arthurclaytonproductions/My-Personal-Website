@@ -10,7 +10,7 @@ body, html {
 }
 
 header {
-  padding: 4em;
+  padding: 3em;
 }
 
 a {
@@ -52,8 +52,8 @@ nav {
 }
 
 nav .close-btn {
-  width: 26px;
-  height: 26px;
+  width: 28px;
+  height: 28px;
   float: right;
   cursor: pointer;
   opacity: 0;
@@ -318,7 +318,7 @@ nav ul li {
 
 .pimg1 {
   background-image: url("../images/world.jpeg");
-  height: 800px;
+  height: 1000px;
 }
 
 .pimg2 {

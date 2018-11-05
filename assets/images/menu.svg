@@ -1,20 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39.5 22.5">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 48">
   <defs>
     <style>
       .cls-1 {
         fill: none;
-        stroke: #010101;
-        stroke-width: 4px;
+        stroke: #000;
+        stroke-width: 8px;
       }
     </style>
   </defs>
-  <g id="menu" transform="translate(-199.5 -69.5)">
-    <g id="Group_2" data-name="Group 2">
-      <g id="Group_1" data-name="Group 1">
-        <line id="Line_1" data-name="Line 1" class="cls-1" x2="39.5" transform="translate(199.5 71.5)"/>
-        <line id="Line_2" data-name="Line 2" class="cls-1" x2="39.5" transform="translate(199.5 80.75)"/>
-        <line id="Line_3" data-name="Line 3" class="cls-1" x2="39.5" transform="translate(199.5 90)"/>
-      </g>
-    </g>
+  <g id="menu" transform="translate(-1788.5 -33.5)">
+    <line id="Line_1" data-name="Line 1" class="cls-1" x2="55" transform="translate(1788.5 37.5)"/>
+    <line id="Line_2" data-name="Line 2" class="cls-1" x2="55" transform="translate(1788.5 57.5)"/>
+    <line id="Line_3" data-name="Line 3" class="cls-1" x2="55" transform="translate(1788.5 77.5)"/>
   </g>
 </svg>
