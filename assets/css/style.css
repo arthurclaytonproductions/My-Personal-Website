@@ -10,7 +10,7 @@ body, html {
 }
 
 header {
-  padding: 3em;
+  padding: 3em 100px;
 }
 
 a {
@@ -337,14 +337,30 @@ nav ul li {
 
 .section {
   text-align: center;
-  padding: 50px, 80px;
+  padding: 50px, 100px;
   margin: 0;
 }
 
 .section-light {
-  padding: 20px;
+  padding: 20px 100px;
   background-color: #f4f4f4;
   color: #666;
+}
+
+h2 {
+  font-family: 'Permanent Marker', cursive;
+  color: black;
+  text-align: center;
+  font-size: 24px;
+}
+
+#about-me {
+  position: absolute;
+}
+
+.my-photo {
+  float: left;
+  margin-bottom: 800px;
 }
 
 .ptext {
