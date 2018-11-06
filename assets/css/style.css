@@ -311,7 +311,6 @@ nav ul li {
 .pimg1, .pimg2, .pimg3, .pimg4 {
   background-size: cover;
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -364,5 +363,176 @@ nav ul li {
   color: #fff;
   padding: 20px;
   opacity: 0.70;
+}
+
+@media screen and (max-width: 1680px) {
+  .pimg1 {
+    background-image: url("../images/world.jpeg");
+    height: 850px;
+  }
+  .pimg2 {
+    background-image: url("../images/coding.jpg");
+    height: 510px;
+  }
+  .pimg3 {
+    background-image: url("../images/video.jpeg");
+    height: 510px;
+  }
+  .pimg4 {
+    background-image: url("../images/audio.jpg");
+    height: 510px;
+  }
+}
+
+@media screen and (max-width: 1420px) {
+  .pimg1 {
+    background-image: url("../images/world.jpeg");
+    height: 722px;
+  }
+  .pimg2 {
+    background-image: url("../images/coding.jpg");
+    height: 433px;
+  }
+  .pimg3 {
+    background-image: url("../images/video.jpeg");
+    height: 433px;
+  }
+  .pimg4 {
+    background-image: url("../images/audio.jpg");
+    height: 433px;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .pimg1 {
+    background-image: url("../images/world.jpeg");
+    height: 614px;
+  }
+  .pimg2 {
+    background-image: url("../images/coding.jpg");
+    height: 368px;
+  }
+  .pimg3 {
+    background-image: url("../images/video.jpeg");
+    height: 368px;
+  }
+  .pimg4 {
+    background-image: url("../images/audio.jpg");
+    height: 368px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .pimg1 {
+    background-image: url("../images/world.jpeg");
+    height: 522px;
+  }
+  .pimg2 {
+    background-image: url("../images/coding.jpg");
+    height: 313px;
+  }
+  .pimg3 {
+    background-image: url("../images/video.jpeg");
+    height: 313px;
+  }
+  .pimg4 {
+    background-image: url("../images/audio.jpg");
+    height: 313px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .pimg1 {
+    background-image: url("../images/world.jpeg");
+    height: 422px;
+  }
+  .pimg2 {
+    background-image: url("../images/coding.jpg");
+    height: 265px;
+  }
+  .pimg3 {
+    background-image: url("../images/video.jpeg");
+    height: 265px;
+  }
+  .pimg4 {
+    background-image: url("../images/audio.jpg");
+    height: 265px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .pimg1 {
+    background-image: url("../images/world.jpeg");
+    height: 357px;
+  }
+  .pimg2 {
+    background-image: url("../images/coding.jpg");
+    height: 210px;
+  }
+  .pimg3 {
+    background-image: url("../images/video.jpeg");
+    height: 210px;
+  }
+  .pimg4 {
+    background-image: url("../images/audio.jpg");
+    height: 210px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .pimg1 {
+    background-image: url("../images/world.jpeg");
+    height: 300px;
+  }
+  .pimg2 {
+    background-image: url("../images/coding.jpg");
+    height: 175px;
+  }
+  .pimg3 {
+    background-image: url("../images/video.jpeg");
+    height: 175px;
+  }
+  .pimg4 {
+    background-image: url("../images/audio.jpg");
+    height: 175px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .pimg1 {
+    background-image: url("../images/world.jpeg");
+    height: 250px;
+  }
+  .pimg2 {
+    background-image: url("../images/coding.jpg");
+    height: 150px;
+  }
+  .pimg3 {
+    background-image: url("../images/video.jpeg");
+    height: 150px;
+  }
+  .pimg4 {
+    background-image: url("../images/audio.jpg");
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pimg1 {
+    background-image: url("../images/world.jpeg");
+    height: 220px;
+  }
+  .pimg2 {
+    background-image: url("../images/coding.jpg");
+    height: 120px;
+  }
+  .pimg3 {
+    background-image: url("../images/video.jpeg");
+    height: 120px;
+  }
+  .pimg4 {
+    background-image: url("../images/audio.jpg");
+    height: 120px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
