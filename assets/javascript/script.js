@@ -23,9 +23,8 @@ function removeRemoveMenu(){
     
 };
 
-$(window).scroll(function(e) {
-    parallax();
-  })
+$(window).bind('scroll', parallax);
+parallax();
   
   function parallax() {
     var scroll = $(window).scrollTop();
