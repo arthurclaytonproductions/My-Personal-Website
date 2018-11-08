@@ -1,26 +1,31 @@
 var overlay = document.getElementById('overlay');
-
+var menuGlitch = document.getElementById('menu-glitch');
 
 //nav button icon
 document.getElementById('open-menu').addEventListener('click', function(){
-    overlay.classList.add('show-menu')
-    removeRemoveMenu();
-    
+  overlay.classList.add('show-menu')
+  removeRemoveMenu();
+  setTimeout(glitchTimeOut, 500);
 });
-
 document.getElementById('close-menu').addEventListener('click', function(){
-    overlay.classList.add('remove-menu')
-    removeShowMenu();
-    
+  overlay.classList.add('remove-menu')
+  removeShowMenu();
+  setTimeout(myTimeout, 1500);
+  
 });
 
 function removeShowMenu(){
- overlay.classList.remove('show-menu');
- };
+    overlay.classList.remove('show-menu');
+};
 
 function removeRemoveMenu(){
     overlay.classList.remove('remove-menu');
-    
+};
+function myTimeout(){
+    menuGlitch.classList.add('glitch');
+};
+function glitchTimeOut(){
+  menuGlitch.classList.remove('glitch');
 };
 
 $(window).bind('scroll', parallax);

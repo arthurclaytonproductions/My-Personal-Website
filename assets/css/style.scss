@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Noto+Sans|Permanent+Marker|Righteous');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Kaushan+Script');
 
 body,html{
     height:100;
@@ -11,7 +12,7 @@ body,html{
 }
 
 header{
-    padding: 3em 100px;
+    padding: 3em 50px;
  
 }
  
@@ -33,17 +34,175 @@ header{
     }
  
     
+#menu-glitch{
+        float: right;
+        }
+           
+        .glitch {
+            font-family: 'Permanent Marker', cursive;
+            color: black;
+            font-size: 24px;
+            position: relative;  
+           
+          }
        
-.menu{
-    font-family: 'Permanent Marker', cursive;
-    color: black;
-    font-weight: bold;
-    font-size: 24px;
-    float: right; 
-       
-      }
-   
-      
+          @keyframes noise-anim {
+            0% {
+              clip: rect(83px, 9999px, 23px, 0);
+            }
+            5% {
+              clip: rect(20px, 9999px, 74px, 0);
+            }
+            10% {
+              clip: rect(70px, 9999px, 77px, 0);
+            }
+            15.0% {
+              clip: rect(83px, 9999px, 85px, 0);
+            }
+            20% {
+              clip: rect(50px, 9999px, 18px, 0);
+            }
+            25% {
+              clip: rect(36px, 9999px, 59px, 0);
+            }
+            30.0% {
+              clip: rect(38px, 9999px, 14px, 0);
+            }
+            35% {
+              clip: rect(92px, 9999px, 41px, 0);
+            }
+            40% {
+              clip: rect(20px, 9999px, 22px, 0);
+            }
+            45% {
+              clip: rect(44px, 9999px, 7px, 0);
+            }
+            50% {
+              clip: rect(88px, 9999px, 50px, 0);
+            }
+            55.0% {
+              clip: rect(78px, 9999px, 89px, 0);
+            }
+            60.0% {
+              clip: rect(42px, 9999px, 73px, 0);
+            }
+            65% {
+              clip: rect(91px, 9999px, 17px, 0);
+            }
+            70% {
+              clip: rect(59px, 9999px, 64px, 0);
+            }
+            75% {
+              clip: rect(55px, 9999px, 61px, 0);
+            }
+            80% {
+              clip: rect(85px, 9999px, 42px, 0);
+            }
+            85.0% {
+              clip: rect(100px, 9999px, 24px, 0);
+            }
+            90% {
+              clip: rect(56px, 9999px, 45px, 0);
+            }
+            95% {
+              clip: rect(86px, 9999px, 62px, 0);
+            }
+            100% {
+              clip: rect(86px, 9999px, 47px, 0);
+            }
+          }
+          .glitch:after {
+            content: attr(data-text);
+            position: absolute;
+            left: 2px;
+            text-shadow: -1px 0 red;
+            top: 0;
+            color: black;
+            background: white;
+            overflow: hidden;
+            clip: rect(0, 900px, 0, 0);
+            animation: noise-anim 2s infinite linear alternate-reverse;
+           
+          }
+          
+          @keyframes noise-anim-2 {
+            0% {
+              clip: rect(50px, 9999px, 70px, 0);
+            }
+            5% {
+              clip: rect(80px, 9999px, 10px, 0);
+            }
+            10% {
+              clip: rect(1px, 9999px, 62px, 0);
+            }
+            15.0% {
+              clip: rect(82px, 9999px, 40px, 0);
+            }
+            20% {
+              clip: rect(32px, 9999px, 63px, 0);
+            }
+            25% {
+              clip: rect(63px, 9999px, 31px, 0);
+            }
+            30.0% {
+              clip: rect(15px, 9999px, 39px, 0);
+            }
+            35% {
+              clip: rect(17px, 9999px, 52px, 0);
+            }
+            40% {
+              clip: rect(66px, 9999px, 59px, 0);
+            }
+            45% {
+              clip: rect(3px, 9999px, 58px, 0);
+            }
+            50% {
+              clip: rect(56px, 9999px, 28px, 0);
+            }
+            55.0% {
+              clip: rect(90px, 9999px, 91px, 0);
+            }
+            60.0% {
+              clip: rect(94px, 9999px, 97px, 0);
+            }
+            65% {
+              clip: rect(18px, 9999px, 79px, 0);
+            }
+            70% {
+              clip: rect(59px, 9999px, 37px, 0);
+            }
+            75% {
+              clip: rect(35px, 9999px, 83px, 0);
+            }
+            80% {
+              clip: rect(51px, 9999px, 57px, 0);
+            }
+            85.0% {
+              clip: rect(28px, 9999px, 63px, 0);
+            }
+            90% {
+              clip: rect(98px, 9999px, 55px, 0);
+            }
+            95% {
+              clip: rect(69px, 9999px, 94px, 0);
+            }
+            100% {
+              clip: rect(56px, 9999px, 1px, 0);
+            }
+          }
+          .glitch:before {
+            content: attr(data-text);
+            position: absolute;
+            left: -2px;
+            text-shadow: 1px 0 blue;
+            top: 0;
+            color: black;
+            background: white;
+            overflow: hidden;
+            clip: rect(0, 900px, 0, 0);
+            animation: noise-anim-2 3s infinite linear alternate-reverse;
+            
+          }   
     
 nav{
     position: absolute;
@@ -65,11 +224,11 @@ nav{
 
     ul{
         list-style-type: none;
-        margin: auto;
+        margin: 0;
         padding: 0;
         display: grid;
-        grid-template-columns: repeat(4, 25%);
-        width: 80%;
+        grid-template-columns: repeat(5, 25%);
+        width: 78%;
 
         a{
             color: black;
@@ -128,6 +287,9 @@ nav{
     li:nth-of-type(4){
         animation: menu-item-anim .6s forwards 1.6s ease-in-out;
     }
+    li:nth-of-type(5){
+        animation: menu-item-anim .6s forwards 1.8s ease-in-out;
+    }
         
     
 }
@@ -160,22 +322,25 @@ nav{
 
 .remove-menu{
     display: block;
-    animation: slide-menu-out 1.6s ease-in backwards;
+    animation: slide-menu-out 2s ease-in backwards;
     .close-btn{
-        animation: show-x-out 1.6s 1.6s backwards;
+        animation: show-x-out 2s 2s backwards;
     }
     
     li:nth-of-type(1){
-        animation: menu-item-anim-out .2s backwards .8s ease-in-out;
+        animation: menu-item-anim-out .5s backwards 1s ease-in-out;
     }
     li:nth-of-type(2){
-        animation: menu-item-anim-out .2s backwards .6s ease-in-out;
+        animation: menu-item-anim-out .4s backwards .8s ease-in-out;
     }
     li:nth-of-type(3){
-        animation: menu-item-anim-out .2s backwards .4s ease-in-out;
+        animation: menu-item-anim-out .3s backwards .6s ease-in-out;
     }
     li:nth-of-type(4){
-        animation: menu-item-anim-out .2s backwards .2s ease-in-out;
+        animation: menu-item-anim-out .2s backwards .4s ease-in-out;
+    }
+    li:nth-of-type(5){
+        animation: menu-item-anim-out .1s backwards .2s ease-in-out;
     }
 }
 @keyframes slide-menu-out{
@@ -205,7 +370,7 @@ nav{
     }
 }
 
-.pimg1, .pimg2, .pimg3, .pimg4{
+.pimg1, .pimg2, .pimg3{
   
   background-size: cover;
   background-position: center;
@@ -214,55 +379,73 @@ nav{
 }
   
 .pimg1{
-  background-image: url('../images/world.jpeg');
-  height: 1000px; 
+    background-image: url('../images/world.jpeg');
+    height: 1000px; 
 }
 .pimg2{
     background-image: url('../images/coding.jpg');
     height: 600px;
-    
-  }
-  .pimg3{
-    background-image: url('../images/video.jpeg');
-    height: 600px;
-  }
-  .pimg4{
-    background-image: url('../images/audio.jpg');
-    height: 600px;
-    
-  }
-.section{
-    text-align: center;
-    padding: 50px, 100px;
-    margin: 0;
-
+}
+.pimg3{
+  background-image: url('../images/background2.jpg');
+  height: 600px;
 }
 
-.section-light{
-    padding: 20px 100px;
+
+.project-h2{
+    font-family: 'Permanent Marker', cursive;
+    color: black;
+    font-size: 40px;
+    padding: 20px 50px;
+  }
+
+.section-grey{
+    text-align: center;
+    padding: 20px 50px;
     background-color: #f4f4f4;
     color:#666;
 }
 
-h2{
-    font-family: 'Permanent Marker', cursive;
-    color: black;
-    text-align: center;
-    font-size: 24px;
+.section-h2 {
+  font-family: 'Permanent Marker', cursive;
+  color: black;
+  font-size: 40px;
+  
 }
 
-#about-me{
-    
-    position: absolute;
-   
+.about-h2{
+  font-family: 'Permanent Marker', cursive;
+  color: black;
+  font-size: 40px;
+  float: right;
 }
-.my-photo{
-    
+
+.behind-text{
+  font-family: 'Kaushan Script', cursive;
+  color: #666;
+  font-size: 100px;
+  opacity: 0.1;
+  position: absolute;
+  top:1075px;
+  left:50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+
+.my-pic{
+    padding: 15px 15px 15px 15px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+    -moz-box-shadow: 0 1px 2px rgba(34,25,25,0.4);
+    -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
     float:left;
-    margin-bottom: 800px;
-}
+  }
 
-
+  .pic-hidden{
+    clear: both;
+    overflow: hidden;
+  }
 
 
 .ptext{
@@ -283,6 +466,82 @@ h2{
     opacity: 0.70;
 
 }
+
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font-family: 'Permanent Marker', cursive;
+  padding: 45px 50px;
+
+ 
+}
+
+.footer-distributed .footer-left p{
+	color:  #8f9296;
+	font-size: 14px;
+	margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links{
+	font-size:18px;
+	font-weight: bold;
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed p.footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-right{
+	float: right;
+	margin-top: 6px;
+	max-width: 180px;
+}
+
+.footer-distributed .footer-right a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-left: 3px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		text-align: center;
+	}
+
+	.footer-distributed .footer-right{
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.footer-distributed .footer-left p.footer-links{
+		line-height: 1.8;
+	}
+}
+
   
 @media screen and (max-width:1680px){
    .pimg1{
@@ -291,16 +550,6 @@ h2{
    } 
    .pimg2{
     background-image: url('../images/coding.jpg');
-    height: 510px;
-    
-  }
-  .pimg3{
-    background-image: url('../images/video.jpeg');
-    height: 510px;
-    
-  }
-  .pimg4{
-    background-image: url('../images/audio.jpg');
     height: 510px;
     
   }
@@ -316,16 +565,6 @@ h2{
      height: 433px;
      
    }
-   .pimg3{
-     background-image: url('../images/video.jpeg');
-     height: 433px;
-     
-   }
-   .pimg4{
-     background-image: url('../images/audio.jpg');
-     height: 433px;
-     
-   }
  }
 
  @media screen and (max-width:1220px){
@@ -335,16 +574,6 @@ h2{
     } 
     .pimg2{
      background-image: url('../images/coding.jpg');
-     height: 368px;
-     
-   }
-   .pimg3{
-     background-image: url('../images/video.jpeg');
-     height: 368px;
-     
-   }
-   .pimg4{
-     background-image: url('../images/audio.jpg');
      height: 368px;
      
    }
@@ -360,16 +589,6 @@ h2{
      height: 313px;
      
    }
-   .pimg3{
-     background-image: url('../images/video.jpeg');
-     height: 313px;
-     
-   }
-   .pimg4{
-     background-image: url('../images/audio.jpg');
-     height: 313px;
-     
-   }
  }
 
  @media screen and (max-width:920px){
@@ -379,16 +598,6 @@ h2{
     } 
     .pimg2{
      background-image: url('../images/coding.jpg');
-     height: 265px;
-     
-   }
-   .pimg3{
-     background-image: url('../images/video.jpeg');
-     height: 265px;
-     
-   }
-   .pimg4{
-     background-image: url('../images/audio.jpg');
      height: 265px;
      
    }
@@ -404,16 +613,6 @@ h2{
      height: 210px;
      
    }
-   .pimg3{
-     background-image: url('../images/video.jpeg');
-     height: 210px;
-     
-   }
-   .pimg4{
-     background-image: url('../images/audio.jpg');
-     height: 210px;
-     
-   }
  }
 
  @media screen and (max-width:640px){
@@ -423,16 +622,6 @@ h2{
     } 
     .pimg2{
      background-image: url('../images/coding.jpg');
-     height: 175px;
-     
-   }
-   .pimg3{
-     background-image: url('../images/video.jpeg');
-     height: 175px;
-     
-   }
-   .pimg4{
-     background-image: url('../images/audio.jpg');
      height: 175px;
      
    }
@@ -448,16 +637,6 @@ h2{
      height: 150px;
      
    }
-   .pimg3{
-     background-image: url('../images/video.jpeg');
-     height: 150px;
-     
-   }
-   .pimg4{
-     background-image: url('../images/audio.jpg');
-     height: 150px;
-     
-   }
  }
 
  @media screen and (max-width:480px){
@@ -467,16 +646,6 @@ h2{
     } 
     .pimg2{
      background-image: url('../images/coding.jpg');
-     height: 120px;
-     
-   }
-   .pimg3{
-     background-image: url('../images/video.jpeg');
-     height: 120px;
-     
-   }
-   .pimg4{
-     background-image: url('../images/audio.jpg');
      height: 120px;
      
    }
