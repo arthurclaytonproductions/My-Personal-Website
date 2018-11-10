@@ -664,10 +664,10 @@ nav ul li {
 .behind-text {
   font-family: 'Kaushan Script', cursive;
   color: #666;
-  font-size: 100px;
+  font-size: 80px;
   opacity: 0.1;
   position: absolute;
-  top: 1075px;
+  top: 925px;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -706,7 +706,7 @@ nav ul li {
 }
 
 .project-pics {
-  height: 300px;
+  height: 250px;
 }
 
 .black {
@@ -825,6 +825,10 @@ nav ul li {
   text-align: center;
   line-height: 35px;
   margin-left: 3px;
+}
+
+.linkedin, .facebook, .instagram, .github {
+  height: 35px;
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */

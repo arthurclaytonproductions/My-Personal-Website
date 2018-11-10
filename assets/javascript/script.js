@@ -1,6 +1,7 @@
 var overlay = document.getElementById('overlay');
 var menuGlitch = document.getElementById('menu-glitch');
-
+var scrollLink = $('.scroll');
+    
 //nav button icon
 document.getElementById('open-menu').addEventListener('click', function(){
   overlay.classList.add('show-menu')
@@ -47,4 +48,15 @@ parallax();
     })
   }
 
+
+  
+    
+    // Smooth scrolling
+    scrollLink.click(function(e) {
+      e.preventDefault();
+      $('body,html').animate({
+        scrollTop: $(this.hash).offset().top
+      }, 1000 );
+    });
+    
   
