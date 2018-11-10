@@ -434,6 +434,7 @@ nav{
   color: black;
   font-size: 40px;
   float: right;
+ 
 }
 
 .behind-text{
@@ -499,7 +500,8 @@ nav{
     -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
     -moz-box-shadow: 0 4px 6px rgba(0,0,0,.3);
     box-shadow: 0 4px 6px rgba(0,0,0,.3);
-    width: 400px
+    width: 400px;
+    height:330px;
     
   }
   
@@ -683,28 +685,91 @@ nav{
      height: 368px;
      
    }
- }
 
- @media screen and (max-width:1040px){
-    .pimg1{
-     background-image: url('../images/world.jpeg'); 
-     height: 522px;
-    } 
-    .pimg2{
-     background-image: url('../images/coding.jpg');
-     height: 313px;
-     
-   }
-   
-
-  .writing{
-    padding: 20px 50px;
-  }
+   nav{
+    .close-btn{
+      width: 24px;
+      height:24px;
   
- 
+  }
+
+    ul{
+        
+        a{
+          font-size: 20px;
+            }
+
+        span{
+         font-size: 16px;
+            }
+
+    }
+}
+
+.logo{
+
+  font-size: 22px;     
+  }
+
+.menu-btn{
+  width: 24px;
+  height: 24px;
+
+  }
+
+
+
+.glitch {
+    
+          font-size: 22px;
+          
+        }
+
+.behind-text{
+    
+          font-size: 60px;
+         
+        }
+
+.ptext{
+  font-size: 40px;
+}
+
+.section-h2, .project-h2, .about-h2 {
+
+  font-size: 32px;
+  
+}
+
+body,html{
+  font-size: 16px;
+}
+
+.my-pic{
+  height: 325px;
+}
+
+.project-pics{
+  height: 275px;
+  
  }
 
- @media screen and (max-width:920px){
+ .projects-text{
+   
+  width: 300px;
+  height: 230px;
+  
+}
+
+.writing{
+  padding: 0px 50px;
+}
+
+
+}
+
+
+ @media screen and (max-width:980px){
     .pimg1{
      background-image: url('../images/world.jpeg'); 
      height: 422px;
@@ -714,6 +779,94 @@ nav{
      height: 265px;
      
    }
+
+   nav{
+    .close-btn{
+      width: 22px;
+      height:22px;
+     
+  }
+
+    ul{
+        
+        a{
+          font-size: 18px;
+            }
+
+        span{
+         font-size: 12px;
+            }
+
+    }
+}
+
+.logo{
+
+  font-size: 20px;     
+  }
+
+.menu-btn{
+  width: 22px;
+  height: 22px;
+ 
+  }
+
+
+
+.glitch {
+          
+          font-size: 20px;
+           
+         
+        }
+
+.behind-text{
+    
+          font-size: 40px;
+         
+        }
+
+.ptext{
+  font-size: 30px;
+}
+
+.section-h2, .project-h2, .about-h2 {
+
+  font-size: 26px;
+  
+}
+
+body,html{
+  font-size: 14px;
+}
+
+.my-pic{
+  height: 225px;
+}
+
+.project-pics{
+  height: 200px;
+  
+ }
+
+ .projects-text{
+   
+  width: 200px;
+  height: 130px;
+  
+}
+
+.writing{
+  padding: 0px 50px;
+}
+
+
+
+.pimg3{
+  height: 1400px;
+}
+
+
  }
 
  @media screen and (max-width:740px){
@@ -726,9 +879,74 @@ nav{
      height: 210px;
      
    }
+
+   .pimg3{
+    height: 1200px;
+  }
+   .my-pic{
+     height: 175px;
+    
+   }
+
+   .project-pics{
+    height: 150px;
+    
+   }
+  
+   .projects-text{
+     
+    width: 150px;
+    height: 80px;
+    
+  }
+
+  body,html{
+    font-size: 12px;
+  }
+  .writing{
+    padding: 0px 0px;
+  }
+
+  nav{
+    .close-btn{
+      width: 20px;
+      height: 20px;
+     
+  }
+
+    ul{
+        
+        a{
+          font-size: 16px;
+            }
+
+        span{
+         font-size: 10px;
+            }
+
+    }
+}
+
+.logo{
+
+  font-size: 18px;     
+  }
+
+.menu-btn{
+  width: 20px;
+  height: 20px;
+ 
+  }
+  
+.glitch {
+          
+  font-size: 18px;
+   
+ 
+}
  }
 
- @media screen and (max-width:640px){
+ @media screen and (max-width:680px){
     .pimg1{
      background-image: url('../images/world.jpeg'); 
      height: 300px;
@@ -736,8 +954,55 @@ nav{
     .pimg2{
      background-image: url('../images/coding.jpg');
      height: 175px;
-     
-   }
+ }
+
+ .behind-text{
+  font-size: 32px;
+  
+ }
+.my-pic{
+  float: none;
+}
+
+nav{
+  .close-btn{
+    width: 18px;
+    height: 18px;
+   
+}
+
+  ul{
+      
+      a{
+        font-size: 14px;
+          }
+
+      span{
+       font-size: 8px;
+          }
+
+  }
+}
+
+.logo{
+text-align: center;
+font-size: 16px;     
+}
+
+.menu-btn{
+width: 18px;
+height: 18px;
+
+}
+
+
+.glitch {
+        
+font-size: 16px;
+ 
+
+}
+
    .footer-distributed .footer-left,
    .footer-distributed .footer-right{
      text-align: center;
@@ -753,6 +1018,24 @@ nav{
    }
  }
 
+ @media screen and (max-width:600px){
+  .behind-text{
+    font-size: 28px;
+    
+   }
+   .pimg3{
+    height: 1200px;
+  }
+}
+
+@media screen and (max-width: 620px){
+  .my-pic{
+    
+    height: 300px;
+   
+}
+}
+
  @media screen and (max-width:540px){
     .pimg1{
      background-image: url('../images/world.jpeg'); 
@@ -763,7 +1046,82 @@ nav{
      height: 150px;
      
    }
+
+  .my-pic{
+    height: 250px;
+   
+  }
+
+  .ptext{
+    font-size: 24px;
+  }
+
+  .section-h2, .project-h2, .about-h2 {
+
+    font-size: 20px;
+    
+  }
+
+  nav{
+    .close-btn{
+      width: 18px;
+      height: 18px;
+     
+  }
+  
+    ul{
+        
+        a{
+          font-size: 12px;
+            }
+  
+        span{
+         font-size: 8px;
+            }
+  
+    }
+  }
+  
+  .logo{
+  
+  font-size: 16px;     
+  }
+  
+  .menu-btn{
+  width: 18px;
+  height: 18px;
+  
+  }
+  
+  .glitch {
+          
+  font-size: 16px;
+   
+  
+  }
+  
  }
+
+ @media screen and (max-width:520px){
+  .behind-text{
+    font-size: 24px;
+    
+   }
+   .pimg3{
+    height: 1500px;
+  }
+
+  .ptext{
+    font-size: 24px;
+  }
+
+.section-h2, .project-h2, .about-h2 {
+
+  font-size: 20px;
+  
+}
+}
+
 
  @media screen and (max-width:480px){
     .pimg1{
@@ -775,4 +1133,69 @@ nav{
      height: 120px;
      
    }
+   .behind-text{
+    font-size: 20px;
+    
+   }
+   .pimg3{
+    height: 1600px;
+  }
+
+  .ptext{
+    font-size: 20px;
+  }
+
+.section-h2, .project-h2, .about-h2 {
+
+  font-size: 18px;
+  
+}
+
+.my-pic{
+  height: 250px;
+ 
+}
+.my-pic{
+  height: 180px;
+ 
+}
+
+.project-pics{
+  height: 150px;
+  
  }
+
+ .projects-text{
+   
+  width: 150px;
+  height: 80px;
+  
+}
+nav{
+  .close-btn{
+    width: 18px;
+    height: 18px;
+   
+}
+
+  ul{
+      
+      a{
+        font-size: 11px;
+          }
+
+      span{
+       font-size: 6px;
+          }
+
+  }
+}
+
+header{
+  padding: 3em 0px;
+
+}
+
+
+ }
+ 
