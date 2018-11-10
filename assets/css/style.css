@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Noto+Sans|Permanent+Marker|Righteous");
 @import url("https://fonts.googleapis.com/css?family=Great+Vibes|Kaushan+Script");
+@import url("https://fonts.googleapis.com/css?family=Arimo");
 body, html {
   height: 100;
   margin: 0;
-  font-size: 16px;
-  font-family: "Lato", sans-serif;
+  font-size: 22px;
+  font-family: 'Arimo', sans-serif;
   font-weight: 400;
   line-height: 1.8em;
   color: #666;
+  font-weight: 500;
 }
 
 header {
@@ -22,7 +24,7 @@ a {
   color: black;
   font-family: 'Permanent Marker', cursive;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 26px;
 }
 
 .menu-btn {
@@ -38,7 +40,7 @@ a {
 .glitch {
   font-family: 'Permanent Marker', cursive;
   color: black;
-  font-size: 24px;
+  font-size: 26px;
   position: relative;
 }
 
@@ -612,7 +614,7 @@ nav ul li {
   }
 }
 
-.pimg1, .pimg2, .pimg3 {
+.pimg1, .pimg2 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -631,7 +633,9 @@ nav ul li {
 
 .pimg3 {
   background-image: url("../images/background2.jpg");
-  height: 600px;
+  background-size: cover;
+  background-position: center;
+  height: 1850px;
 }
 
 .project-h2 {
@@ -642,13 +646,24 @@ nav ul li {
 }
 
 .section-grey {
+  padding: 20px 50px;
+  background-color: #f4f4f4;
+  color: #666;
+}
+
+.section-contact {
   text-align: center;
   padding: 20px 50px;
   background-color: #f4f4f4;
   color: #666;
 }
 
+.writing {
+  padding: 0 150px;
+}
+
 .section-h2 {
+  text-align: center;
   font-family: 'Permanent Marker', cursive;
   color: black;
   font-size: 40px;
@@ -665,12 +680,8 @@ nav ul li {
   font-family: 'Kaushan Script', cursive;
   color: #666;
   font-size: 80px;
+  text-align: center;
   opacity: 0.1;
-  position: absolute;
-  top: 925px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
 }
 
 .my-pic {
@@ -680,10 +691,10 @@ nav ul li {
   -moz-box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
   -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
   float: left;
+  margin-right: 10px;
 }
 
 .pic-hidden {
-  clear: both;
   overflow: hidden;
 }
 
@@ -706,11 +717,28 @@ nav ul li {
 }
 
 .project-pics {
-  height: 250px;
+  height: 300px;
 }
 
 .black {
   color: black;
+}
+
+.projects-text {
+  font-family: 'Permanent Marker', cursive;
+  color: black;
+  background: #FFFF99;
+  display: inline;
+  float: left;
+  margin: 0 15px 30px;
+  padding: 10px 10px 25px;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  width: 400px;
+}
+
+.polaroid-images {
+  list-style-type: none;
 }
 
 .polaroid-images a {
@@ -774,6 +802,18 @@ nav ul li {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
 }
 
+.project-portfolio {
+  clear: both;
+}
+
+.project-commerical {
+  clear: both;
+}
+
+.project-short {
+  clear: both;
+}
+
 .footer-distributed {
   background-color: #292c2f;
   -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -792,7 +832,6 @@ nav ul li {
   margin: 0;
 }
 
-/* Footer links */
 .footer-distributed p.footer-links {
   font-size: 18px;
   font-weight: bold;
@@ -829,21 +868,6 @@ nav ul li {
 
 .linkedin, .facebook, .instagram, .github {
   height: 35px;
-}
-
-/* If you don't want the footer to be responsive, remove these media queries */
-@media (max-width: 600px) {
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-right {
-    text-align: center;
-  }
-  .footer-distributed .footer-right {
-    float: none;
-    margin: 0 auto 20px;
-  }
-  .footer-distributed .footer-left p.footer-links {
-    line-height: 1.8;
-  }
 }
 
 @media screen and (max-width: 1680px) {
@@ -888,6 +912,9 @@ nav ul li {
     background-image: url("../images/coding.jpg");
     height: 313px;
   }
+  .writing {
+    padding: 20px 50px;
+  }
 }
 
 @media screen and (max-width: 920px) {
@@ -920,6 +947,17 @@ nav ul li {
   .pimg2 {
     background-image: url("../images/coding.jpg");
     height: 175px;
+  }
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
   }
 }
 
