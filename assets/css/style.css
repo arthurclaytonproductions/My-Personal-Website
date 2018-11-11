@@ -33,305 +33,8 @@ a {
   cursor: pointer;
 }
 
-#menu-glitch {
+#menu {
   float: right;
-}
-
-.glitch {
-  font-family: 'Permanent Marker', cursive;
-  color: black;
-  font-size: 26px;
-  position: relative;
-}
-
-@-webkit-keyframes noise-anim {
-  0% {
-    clip: rect(83px, 9999px, 23px, 0);
-  }
-  5% {
-    clip: rect(20px, 9999px, 74px, 0);
-  }
-  10% {
-    clip: rect(70px, 9999px, 77px, 0);
-  }
-  15.0% {
-    clip: rect(83px, 9999px, 85px, 0);
-  }
-  20% {
-    clip: rect(50px, 9999px, 18px, 0);
-  }
-  25% {
-    clip: rect(36px, 9999px, 59px, 0);
-  }
-  30.0% {
-    clip: rect(38px, 9999px, 14px, 0);
-  }
-  35% {
-    clip: rect(92px, 9999px, 41px, 0);
-  }
-  40% {
-    clip: rect(20px, 9999px, 22px, 0);
-  }
-  45% {
-    clip: rect(44px, 9999px, 7px, 0);
-  }
-  50% {
-    clip: rect(88px, 9999px, 50px, 0);
-  }
-  55.0% {
-    clip: rect(78px, 9999px, 89px, 0);
-  }
-  60.0% {
-    clip: rect(42px, 9999px, 73px, 0);
-  }
-  65% {
-    clip: rect(91px, 9999px, 17px, 0);
-  }
-  70% {
-    clip: rect(59px, 9999px, 64px, 0);
-  }
-  75% {
-    clip: rect(55px, 9999px, 61px, 0);
-  }
-  80% {
-    clip: rect(85px, 9999px, 42px, 0);
-  }
-  85.0% {
-    clip: rect(100px, 9999px, 24px, 0);
-  }
-  90% {
-    clip: rect(56px, 9999px, 45px, 0);
-  }
-  95% {
-    clip: rect(86px, 9999px, 62px, 0);
-  }
-  100% {
-    clip: rect(86px, 9999px, 47px, 0);
-  }
-}
-
-@keyframes noise-anim {
-  0% {
-    clip: rect(83px, 9999px, 23px, 0);
-  }
-  5% {
-    clip: rect(20px, 9999px, 74px, 0);
-  }
-  10% {
-    clip: rect(70px, 9999px, 77px, 0);
-  }
-  15.0% {
-    clip: rect(83px, 9999px, 85px, 0);
-  }
-  20% {
-    clip: rect(50px, 9999px, 18px, 0);
-  }
-  25% {
-    clip: rect(36px, 9999px, 59px, 0);
-  }
-  30.0% {
-    clip: rect(38px, 9999px, 14px, 0);
-  }
-  35% {
-    clip: rect(92px, 9999px, 41px, 0);
-  }
-  40% {
-    clip: rect(20px, 9999px, 22px, 0);
-  }
-  45% {
-    clip: rect(44px, 9999px, 7px, 0);
-  }
-  50% {
-    clip: rect(88px, 9999px, 50px, 0);
-  }
-  55.0% {
-    clip: rect(78px, 9999px, 89px, 0);
-  }
-  60.0% {
-    clip: rect(42px, 9999px, 73px, 0);
-  }
-  65% {
-    clip: rect(91px, 9999px, 17px, 0);
-  }
-  70% {
-    clip: rect(59px, 9999px, 64px, 0);
-  }
-  75% {
-    clip: rect(55px, 9999px, 61px, 0);
-  }
-  80% {
-    clip: rect(85px, 9999px, 42px, 0);
-  }
-  85.0% {
-    clip: rect(100px, 9999px, 24px, 0);
-  }
-  90% {
-    clip: rect(56px, 9999px, 45px, 0);
-  }
-  95% {
-    clip: rect(86px, 9999px, 62px, 0);
-  }
-  100% {
-    clip: rect(86px, 9999px, 47px, 0);
-  }
-}
-
-.glitch:after {
-  content: attr(data-text);
-  position: absolute;
-  left: 2px;
-  text-shadow: -1px 0 red;
-  top: 0;
-  color: black;
-  background: white;
-  overflow: hidden;
-  clip: rect(0, 900px, 0, 0);
-  animation: noise-anim 2s infinite linear alternate-reverse;
-}
-
-@-webkit-keyframes noise-anim-2 {
-  0% {
-    clip: rect(50px, 9999px, 70px, 0);
-  }
-  5% {
-    clip: rect(80px, 9999px, 10px, 0);
-  }
-  10% {
-    clip: rect(1px, 9999px, 62px, 0);
-  }
-  15.0% {
-    clip: rect(82px, 9999px, 40px, 0);
-  }
-  20% {
-    clip: rect(32px, 9999px, 63px, 0);
-  }
-  25% {
-    clip: rect(63px, 9999px, 31px, 0);
-  }
-  30.0% {
-    clip: rect(15px, 9999px, 39px, 0);
-  }
-  35% {
-    clip: rect(17px, 9999px, 52px, 0);
-  }
-  40% {
-    clip: rect(66px, 9999px, 59px, 0);
-  }
-  45% {
-    clip: rect(3px, 9999px, 58px, 0);
-  }
-  50% {
-    clip: rect(56px, 9999px, 28px, 0);
-  }
-  55.0% {
-    clip: rect(90px, 9999px, 91px, 0);
-  }
-  60.0% {
-    clip: rect(94px, 9999px, 97px, 0);
-  }
-  65% {
-    clip: rect(18px, 9999px, 79px, 0);
-  }
-  70% {
-    clip: rect(59px, 9999px, 37px, 0);
-  }
-  75% {
-    clip: rect(35px, 9999px, 83px, 0);
-  }
-  80% {
-    clip: rect(51px, 9999px, 57px, 0);
-  }
-  85.0% {
-    clip: rect(28px, 9999px, 63px, 0);
-  }
-  90% {
-    clip: rect(98px, 9999px, 55px, 0);
-  }
-  95% {
-    clip: rect(69px, 9999px, 94px, 0);
-  }
-  100% {
-    clip: rect(56px, 9999px, 1px, 0);
-  }
-}
-
-@keyframes noise-anim-2 {
-  0% {
-    clip: rect(50px, 9999px, 70px, 0);
-  }
-  5% {
-    clip: rect(80px, 9999px, 10px, 0);
-  }
-  10% {
-    clip: rect(1px, 9999px, 62px, 0);
-  }
-  15.0% {
-    clip: rect(82px, 9999px, 40px, 0);
-  }
-  20% {
-    clip: rect(32px, 9999px, 63px, 0);
-  }
-  25% {
-    clip: rect(63px, 9999px, 31px, 0);
-  }
-  30.0% {
-    clip: rect(15px, 9999px, 39px, 0);
-  }
-  35% {
-    clip: rect(17px, 9999px, 52px, 0);
-  }
-  40% {
-    clip: rect(66px, 9999px, 59px, 0);
-  }
-  45% {
-    clip: rect(3px, 9999px, 58px, 0);
-  }
-  50% {
-    clip: rect(56px, 9999px, 28px, 0);
-  }
-  55.0% {
-    clip: rect(90px, 9999px, 91px, 0);
-  }
-  60.0% {
-    clip: rect(94px, 9999px, 97px, 0);
-  }
-  65% {
-    clip: rect(18px, 9999px, 79px, 0);
-  }
-  70% {
-    clip: rect(59px, 9999px, 37px, 0);
-  }
-  75% {
-    clip: rect(35px, 9999px, 83px, 0);
-  }
-  80% {
-    clip: rect(51px, 9999px, 57px, 0);
-  }
-  85.0% {
-    clip: rect(28px, 9999px, 63px, 0);
-  }
-  90% {
-    clip: rect(98px, 9999px, 55px, 0);
-  }
-  95% {
-    clip: rect(69px, 9999px, 94px, 0);
-  }
-  100% {
-    clip: rect(56px, 9999px, 1px, 0);
-  }
-}
-
-.glitch:before {
-  content: attr(data-text);
-  position: absolute;
-  left: -2px;
-  text-shadow: 1px 0 blue;
-  top: 0;
-  color: black;
-  background: white;
-  overflow: hidden;
-  clip: rect(0, 900px, 0, 0);
-  animation: noise-anim-2 3s infinite linear alternate-reverse;
 }
 
 nav {
@@ -815,7 +518,7 @@ nav ul li {
   clear: both;
 }
 
-.footer-distributed {
+.footer-d {
   background-color: #292c2f;
   -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
           box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -827,13 +530,13 @@ nav ul li {
   padding: 45px 50px;
 }
 
-.footer-distributed .footer-left p {
+.footer-d .footer-left p {
   color: #8f9296;
   font-size: 14px;
   margin: 0;
 }
 
-.footer-distributed p.footer-links {
+.footer-d p.footer-links {
   font-size: 18px;
   font-weight: bold;
   color: #ffffff;
@@ -841,20 +544,20 @@ nav ul li {
   padding: 0;
 }
 
-.footer-distributed p.footer-links a {
+.footer-d p.footer-links a {
   display: inline-block;
   line-height: 1.8;
   text-decoration: none;
   color: inherit;
 }
 
-.footer-distributed .footer-right {
+.footer-d .footer-right {
   float: right;
   margin-top: 6px;
   max-width: 180px;
 }
 
-.footer-distributed .footer-right a {
+.footer-d .footer-right a {
   display: inline-block;
   width: 35px;
   height: 35px;
@@ -903,8 +606,8 @@ nav ul li {
     height: 368px;
   }
   nav .close-btn {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
   }
   nav ul a {
     font-size: 20px;
@@ -913,14 +616,11 @@ nav ul li {
     font-size: 16px;
   }
   .logo {
-    font-size: 22px;
+    font-size: 26px;
   }
   .menu-btn {
-    width: 24px;
-    height: 24px;
-  }
-  .glitch {
-    font-size: 22px;
+    width: 28px;
+    height: 28px;
   }
   .behind-text {
     font-size: 60px;
@@ -958,40 +658,8 @@ nav ul li {
     background-image: url("../images/coding.jpg");
     height: 265px;
   }
-  nav .close-btn {
-    width: 22px;
-    height: 22px;
-  }
-  nav ul a {
-    font-size: 18px;
-  }
-  nav ul span {
-    font-size: 12px;
-  }
-  .logo {
-    font-size: 20px;
-  }
-  .menu-btn {
-    width: 22px;
-    height: 22px;
-  }
-  .glitch {
-    font-size: 20px;
-  }
-  .behind-text {
-    font-size: 40px;
-  }
-  .ptext {
-    font-size: 30px;
-  }
-  .section-h2, .project-h2, .about-h2 {
-    font-size: 26px;
-  }
-  body, html {
-    font-size: 14px;
-  }
-  .my-pic {
-    height: 225px;
+  .pimg3 {
+    height: 1400px;
   }
   .project-pics {
     height: 200px;
@@ -1002,9 +670,6 @@ nav ul li {
   }
   .writing {
     padding: 0px 50px;
-  }
-  .pimg3 {
-    height: 1400px;
   }
 }
 
@@ -1023,6 +688,9 @@ nav ul li {
   .my-pic {
     height: 175px;
   }
+  .section-h2, .project-h2, .about-h2 {
+    font-size: 30px;
+  }
   .project-pics {
     height: 150px;
   }
@@ -1036,25 +704,14 @@ nav ul li {
   .writing {
     padding: 0px 0px;
   }
-  nav .close-btn {
-    width: 20px;
-    height: 20px;
+  .behind-text {
+    font-size: 40px;
   }
   nav ul a {
-    font-size: 16px;
+    font-size: 18px;
   }
   nav ul span {
-    font-size: 10px;
-  }
-  .logo {
-    font-size: 18px;
-  }
-  .menu-btn {
-    width: 20px;
-    height: 20px;
-  }
-  .glitch {
-    font-size: 18px;
+    font-size: 12px;
   }
 }
 
@@ -1068,42 +725,41 @@ nav ul li {
     height: 175px;
   }
   .behind-text {
-    font-size: 32px;
+    font-size: 34px;
   }
   .my-pic {
     float: none;
   }
+  .ptext {
+    font-size: 30px;
+  }
   nav .close-btn {
-    width: 18px;
-    height: 18px;
-  }
-  nav ul a {
-    font-size: 14px;
-  }
-  nav ul span {
-    font-size: 8px;
+    width: 24px;
+    height: 24px;
   }
   .logo {
-    text-align: center;
-    font-size: 16px;
+    font-size: 22px;
   }
   .menu-btn {
-    width: 18px;
-    height: 18px;
+    width: 24px;
+    height: 24px;
   }
-  .glitch {
-    font-size: 16px;
-  }
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-right {
+  .footer-d .footer-left,
+  .footer-d .footer-right {
     text-align: center;
   }
-  .footer-distributed .footer-right {
+  .footer-d .footer-right {
     float: none;
     margin: 0 auto 20px;
   }
-  .footer-distributed .footer-left p.footer-links {
+  .footer-d .footer-left p.footer-links {
     line-height: 1.8;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .my-pic {
+    height: 300px;
   }
 }
 
@@ -1114,11 +770,22 @@ nav ul li {
   .pimg3 {
     height: 1200px;
   }
-}
-
-@media screen and (max-width: 620px) {
-  .my-pic {
-    height: 300px;
+  nav .close-btn {
+    width: 22px;
+    height: 22px;
+  }
+  nav ul a {
+    font-size: 16px;
+  }
+  nav ul span {
+    font-size: 10px;
+  }
+  nav .logo {
+    font-size: 20px;
+  }
+  nav .menu-btn {
+    width: 22px;
+    height: 22px;
   }
 }
 
@@ -1135,30 +802,27 @@ nav ul li {
     height: 250px;
   }
   .ptext {
-    font-size: 24px;
+    font-size: 28px;
   }
   .section-h2, .project-h2, .about-h2 {
     font-size: 20px;
   }
   nav .close-btn {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
   }
   nav ul a {
-    font-size: 12px;
+    font-size: 14px;
   }
   nav ul span {
     font-size: 8px;
   }
   .logo {
-    font-size: 16px;
+    font-size: 18px;
   }
   .menu-btn {
-    width: 18px;
-    height: 18px;
-  }
-  .glitch {
-    font-size: 16px;
+    width: 20px;
+    height: 20px;
   }
 }
 
@@ -1187,42 +851,59 @@ nav ul li {
     height: 120px;
   }
   .behind-text {
-    font-size: 20px;
+    font-size: 18px;
   }
   .pimg3 {
     height: 1600px;
   }
   .ptext {
-    font-size: 20px;
+    font-size: 14px;
   }
   .section-h2, .project-h2, .about-h2 {
-    font-size: 18px;
+    font-size: 12px;
+  }
+  body, html {
+    font-size: 10px;
   }
   .my-pic {
-    height: 250px;
-  }
-  .my-pic {
-    height: 180px;
+    height: 145px;
   }
   .project-pics {
-    height: 150px;
+    height: 135px;
   }
   .projects-text {
     width: 150px;
     height: 80px;
   }
+  .menu-btn {
+    width: 18px;
+    height: 18px;
+  }
   nav .close-btn {
     width: 18px;
     height: 18px;
   }
+  nav ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (25%)[5];
+        grid-template-columns: repeat(5, 25%);
+    width: 75%;
+  }
   nav ul a {
-    font-size: 11px;
+    font-size: 10px;
   }
   nav ul span {
     font-size: 6px;
   }
   header {
-    padding: 3em 0px;
+    padding: 3em 10px;
+  }
+  .logo {
+    font-size: 16px;
+  }
+  .footer-d .footer-left p {
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */
